@@ -19,6 +19,8 @@ print("viper_deploy successfully copied to /home/mor0/Desktop/working")
 deployedViper = comp.File(copiedFile)
 
 // Make Deployed Viper universally executable
+deployedViper.chmod("u+wrx", false)
+deployedViper.chmod("g+wrx", false)
 deployedViper.chmod("o+wrx", false)
 
 // Print permission update success
