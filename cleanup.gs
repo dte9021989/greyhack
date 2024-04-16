@@ -9,3 +9,7 @@ adminmonitor_file = comp.File("/root/adminmonitor_deploy")
 
 //Delete specified files
 viper_file.delete
+adminmonitor_file.delete
+
+//Print success message
+print("Tools cleaned up")
